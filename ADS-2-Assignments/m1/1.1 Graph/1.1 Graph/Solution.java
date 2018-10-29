@@ -34,7 +34,11 @@ class Solution {
 				noOfEdges--;
 			}
 			for (int[] each : graph) {
-				System.out.println(Arrays.toString(each));
+				for (int each1: each ) {
+					
+				System.out.print(each + " ");
+				}
+				System.out.println();
 			}
 		}
 	}
