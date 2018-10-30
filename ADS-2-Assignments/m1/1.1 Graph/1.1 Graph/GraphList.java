@@ -12,12 +12,15 @@ public class GraphList implements Graph {
      * @param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public GraphList(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        this.V = V;
+    public GraphList(int v1) {
+        if (v1 < 0) {
+            throw new IllegalArgumentException(
+            "Number of vertices must be nonnegative");
+        }
+        this.V = v1;
         this.E = 0;
         adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        for (int v = 0; v < v1; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -39,11 +42,17 @@ public class GraphList implements Graph {
         return E;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     */
+
+    private void validateVertex(final int v) {
+        if (v < 0 || v >= V) {
             throw new IllegalArgumentException(
                 "vertex " + v + " is not between 0 and " + (V - 1));
+        }
     }
 
     /**

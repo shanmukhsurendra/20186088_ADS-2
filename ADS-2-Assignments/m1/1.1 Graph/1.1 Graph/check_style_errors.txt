@@ -38,15 +38,10 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:5:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:5:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:22: Parameter V should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:26: 'V' hides a field. [HiddenField]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:26: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:16: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:16: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:43:33: Parameter v should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:44: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:12:8: Unused @param tag for 'V'. [JavadocMethod]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:22: Parameter v1 should be final. [FinalParameters]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:26: Expected @param tag for 'v1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
