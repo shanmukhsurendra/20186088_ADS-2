@@ -15,13 +15,13 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    int V();
+    int v();
     /**
      * int method;
      *
      * @return     { description_of_the_return_value }
      */
-    int E();
+    int e();
     /**
      * Adds an edge.
      *
@@ -30,7 +30,7 @@ interface Graph {
      */
     void addEdge(int v, int w);
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      *

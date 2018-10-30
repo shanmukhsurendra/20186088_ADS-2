@@ -75,9 +75,6 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:7:8: Unused import - java.util.Set. [UnusedImports]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:8:8: Unused import - java.util.Collections. [UnusedImports]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:18:9: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:19: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:24:9: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:32: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 10 errors.
