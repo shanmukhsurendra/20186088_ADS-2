@@ -43,8 +43,6 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:26: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:16: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:16: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:29:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:38:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:43:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:43:33: Parameter v should be final. [FinalParameters]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:44: 'if' construct must use '{}'s. [NeedBraces]
@@ -52,18 +50,8 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:45:93: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:45:94: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:53: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:55:25: Parameter v should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:55:32: Parameter w should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:62:5: Class 'GraphList' looks like designed for extension (can be subclassed), but the method 'hasEdge' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GraphList' final or making the method 'hasEdge' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:62:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:62:28: Parameter v should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:62:35: Parameter w should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:89:34: Parameter v should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:101:23: Parameter v should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:110: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:113:27: Parameter data should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:113:36: Expected @param tag for 'data'. [JavadocMethod]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:145: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 21 errors.
 Starting audit...
 Audit done.

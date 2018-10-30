@@ -26,7 +26,7 @@ public class GraphList implements Graph {
      *
      * @return the number of vertices in this GraphList
      */
-    public int V() {
+    public int v() {
         return V;
     }
 
@@ -35,7 +35,7 @@ public class GraphList implements Graph {
      *
      * @return the number of edges in this GraphList
      */
-    public int E() {
+    public int e() {
         return E;
     }
 
@@ -52,14 +52,22 @@ public class GraphList implements Graph {
      * @param  w the other vertex in the edge
      * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         // validateVertex(v);
         // validateVertex(w);
         E++;
         adj[v].add(w);
         adj[w].add(v);
     }
-    public boolean hasEdge(int v, int w) {
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
         int count = 0;
         for (int i : adj[v]) {
             if (i == w) {
@@ -86,7 +94,7 @@ public class GraphList implements Graph {
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -98,7 +106,7 @@ public class GraphList implements Graph {
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
@@ -107,10 +115,18 @@ public class GraphList implements Graph {
     /**
      * Returns a string representation of this GraphList.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>, followed by the
+     * \ number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
-    public String display(String[] data) {
+    /**
+     * { function_description }.
+     *
+     * @param      data  The data
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String display(final String[] data) {
         StringBuilder s = new StringBuilder();
         s.append(V + " vertices, " + E + " edges" + NEWLINE);
         if (E > 0) {
@@ -126,4 +142,4 @@ public class GraphList implements Graph {
         }
         return s.toString();
     }
-}
+}   
