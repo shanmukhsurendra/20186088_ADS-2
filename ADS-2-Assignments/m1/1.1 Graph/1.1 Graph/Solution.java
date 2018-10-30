@@ -27,8 +27,8 @@ class Solution {
 			int noOfEdges = Integer.parseInt(sc.nextLine());
 			String[] arra1 = sc.nextLine().split(",");
 			int[][] graph = new int[noOfVertices][noOfVertices];
-			// System.out.print(noOfVertices + "vertices");
-			// System.out.print(noOfEdges + "edges");
+			System.out.print(noOfVertices + "vertices");
+			System.out.print(noOfEdges + "edges");
 			//System.out.println();
 			while (noOfEdges > 0) {
 				String str2 = sc.nextLine();
