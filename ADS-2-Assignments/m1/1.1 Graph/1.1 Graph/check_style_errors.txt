@@ -83,7 +83,5 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:31:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:32: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:39:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:48:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:53: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 17 errors.
