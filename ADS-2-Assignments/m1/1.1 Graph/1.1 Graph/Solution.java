@@ -6,8 +6,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.Collections;
-
-
+/**
+ * Interface for graph.
+ */
 interface Graph {
 	public int V();
 	public int E();
@@ -15,12 +16,21 @@ interface Graph {
 	public Iterable<Integer> adj(int v);
 	public boolean hasEdge(int v, int w);
 }
-
-
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 
 	}
+	/**
+	 * reads the input and checks the condition.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String type = sc.nextLine();
