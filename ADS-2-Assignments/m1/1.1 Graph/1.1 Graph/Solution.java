@@ -1,5 +1,12 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.Collections;
+
 
 interface Graph {
 	public int V();
@@ -8,43 +15,73 @@ interface Graph {
 	public Iterable<Integer> adj(int v);
 	public boolean hasEdge(int v, int w);
 }
+
+
 class Solution {
 	Solution() {
 
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String str1 = sc.nextLine();
-		if (str1.equals("List")) {
-			int noOfVertices = Integer.parseInt(sc.nextLine());
-			int noOfEdges = Integer.parseInt(sc.nextLine());
-			String[] arra1 = sc.nextLine().split(",");
+		String type = sc.nextLine();
+		String[] nodes = new String[2];
+		int v, e1;
+		if (type.equals("List")) {
 
+			v = Integer.parseInt(sc.nextLine());
+			e1 = Integer.parseInt(sc.nextLine());
+			String[] input = sc.nextLine().split(",");
 
-		}
-		if ((str1.equals("Matrix"))) {
-			int noOfVertices = Integer.parseInt(sc.nextLine());
-			int noOfEdges = Integer.parseInt(sc.nextLine());
-			String[] arra1 = sc.nextLine().split(",");
-			int[][] graph = new int[noOfVertices][noOfVertices];
-			System.out.print(noOfVertices + " vertices" + ", ");
-			System.out.println(noOfEdges + " edges");
-			//System.out.println();
-			while (noOfEdges > 0) {
-				String str2 = sc.nextLine();
-				String arra2[] = str2.split(" ");
-				graph[Integer.parseInt(arra2[0])][Integer.parseInt(arra2[1])] = 1;
-				graph[Integer.parseInt(arra2[1])][Integer.parseInt(arra2[0])] = 1;
-				noOfEdges--;
-			}
-			for (int[] each : graph) {
-				for (int each1: each ) {
-					
-				System.out.print(each1 + " ");
+			GraphList g = new GraphList(v);
+			for (int i = 0; i < e1; i++) {
+				String[] add = sc.nextLine().split(" ");
+				int a = Integer.parseInt(add[0]);
+				int b = Integer.parseInt(add[1]);
+				if (a != b && !g.hasEdge(a, b)) {
+					g.addEdge(a, b);
 				}
-				System.out.println();
 			}
+			System.out.println(g.display(input));
+		} else if (type.equals("Matrix")) {
+			v = 0;
+			e1 = 0;
+			v = Integer.parseInt(sc.nextLine());
+			e1 = Integer.parseInt(sc.nextLine());
+			String[] line = sc.nextLine().split(",");
+			int[][] graph = new int[v][v];
+			int a, b;
+			while (sc.hasNext()) {
+				nodes = sc.nextLine().split(" ");
+				a = Integer.parseInt(nodes[0]);
+				b = Integer.parseInt(nodes[1]);
+				if (a != b) {
+					graph[a][b] = 1;
+					if (graph[b][a] == 1) {
+						e1--;
+					} else {
+						graph[b][a] = 1;
+					}
+				}
+			}
+			if (v == 1) {
+				System.out.println(v + " vertices, " + (e1 - 1) + " edges");
+
+			} else {
+				System.out.println(v + " vertices, " + e1 + " edges");
+
+			}
+			if (v <= 1 ) {
+				System.out.println("No edges");
+			} else {
+				for (int[] each : graph) {
+					for (int each2 : each) {
+						System.out.print(each2 + " ");
+					}
+					System.out.println();
+				}
+			}
+
+
 		}
 	}
 }
-
