@@ -15,20 +15,20 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V();
+    int V();
     /**
      * int method;
      *
      * @return     { description_of_the_return_value }
      */
-    public int E();
+    int E();
     /**
      * Adds an edge.
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w);
+    void addEdge(int v, int w);
     /**
      * { function_description }
      *
@@ -36,7 +36,7 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> adj(int v);
+    Iterable<Integer> adj(int v);
     /**
      * Determines if it has edge.
      *
