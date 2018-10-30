@@ -33,15 +33,9 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:4:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:5:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:12:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:22: Parameter v1 should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:15:26: Expected @param tag for 'v1'. [JavadocMethod]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:6:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m1\1.1 Graph\1.1 Graph\GraphList.java:10:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.

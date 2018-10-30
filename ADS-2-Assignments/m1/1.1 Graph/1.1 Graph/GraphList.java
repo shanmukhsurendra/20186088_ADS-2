@@ -1,18 +1,31 @@
 public class GraphList implements Graph {
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * { var_description }.
+     */
     private final int V;
+    /**
+     * { var_description }.
+     */
     private int E;
+    /**
+     * { var_description }.
+     */
     private Bag<Integer>[] adj;
 
     /**
      * Initializes an empty GraphList with {@code V} vertices and 0 edges.
      * param V the number of vertices
      *
-     * @param  V number of vertices
+     * //@param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public GraphList(int v1) {
+    /**
+     * Constructs the object.
+     *
+     * @param      v1    The v 1
+     */
+    public GraphList(final int v1) {
         if (v1 < 0) {
             throw new IllegalArgumentException(
             "Number of vertices must be nonnegative");
