@@ -37,7 +37,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-13vertices, 13edges
+13 vertices, 13 edges
 1 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -138,7 +138,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-36vertices, 78edges
+36 vertices, 78 edges
 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -192,7 +192,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1vertices, 1edges
+1 vertices, 1 edges
 1
 ----------------------------------------
 
@@ -202,7 +202,7 @@ Expected Output:
 No edges
 
 Your Output: 
-0vertices, 0edges
+0 vertices, 0 edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
