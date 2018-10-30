@@ -34,6 +34,7 @@ class Solution {
 				String str2 = sc.nextLine();
 				String arra2[] = str2.split(" ");
 				graph[Integer.parseInt(arra2[0])][Integer.parseInt(arra2[1])] = 1;
+				graph[Integer.parseInt(arra2[1])][Integer.parseInt(arra2[0])] = 1;
 				noOfEdges--;
 			}
 			for (int[] each : graph) {
