@@ -4,22 +4,25 @@ import java.util.Scanner;
 // import java.util.ArrayList;
 // import java.util.HashSet;
 // import java.util.List;
+// import java.util.Set;
+// import java.util.Collections;
+
 /**
  * Interface for graph.
  */
 interface Graph {
     /**
-     * int method.
+     * v.
      *
      * @return     { description_of_the_return_value }
      */
-    int v();
+    int v1();
     /**
-     * int method;.
+     * e1.
      *
      * @return     { description_of_the_return_value }
      */
-    int e();
+    int e1();
     /**
      * Adds an edge.
      *
@@ -28,7 +31,7 @@ interface Graph {
      */
     void addEdge(int v, int w);
     /**
-     * { function_description }.
+     * Adjectent.
      *
      * @param      v     { parameter_description }
      *
@@ -45,6 +48,7 @@ interface Graph {
      */
     boolean hasEdge(int v, int w);
 }
+
 /**
  * Class for solution.
  */
@@ -56,7 +60,7 @@ final class Solution {
 
     }
     /**
-     * reads the input and checks the condition.
+     * Main.
      *
      * @param      args  The arguments
      */
@@ -86,15 +90,20 @@ final class Solution {
             e1 = 0;
             v = Integer.parseInt(sc.nextLine());
             e1 = Integer.parseInt(sc.nextLine());
+            // System.out.println("e =" + e1);
+
             String[] line = sc.nextLine().split(",");
             int[][] graph = new int[v][v];
+
+            // System.out.println(Arrays.deepToString(graph));
             int a, b;
-            while (sc.hasNext()) {
+            while      (sc.hasNext()) {
                 nodes = sc.nextLine().split(" ");
                 a = Integer.parseInt(nodes[0]);
                 b = Integer.parseInt(nodes[1]);
                 if (a != b) {
                     graph[a][b] = 1;
+
                     if (graph[b][a] == 1) {
                         e1--;
                     } else {
@@ -103,12 +112,13 @@ final class Solution {
                 }
             }
             if (v == 1) {
-            System.out.println(v + " vertices, " + (e1 - 1) + " edges");
+                System.out.println(v + " vertices, " + (e1 - 1) + " edges");
 
             } else {
                 System.out.println(v + " vertices, " + e1 + " edges");
 
             }
+            // System.out.println(Arrays.deepToString(graph));
             if (v <= 1) {
                 System.out.println("No edges");
             } else {
@@ -124,5 +134,3 @@ final class Solution {
         }
     }
 }
-
-
