@@ -16,9 +16,9 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		String str1 = sc.nextLine();
 		if (str1.equals("List")) {
-			// int noOfVertices = Integer.parseInt(sc.nextLine());
-			// Int noOfEdges = Integer.parseInt(sc.nextLine());
-			// String[] arra1 = sc.nextLine().split(",");
+			int noOfVertices = Integer.parseInt(sc.nextLine());
+			int noOfEdges = Integer.parseInt(sc.nextLine());
+			String[] arra1 = sc.nextLine().split(",");
 
 
 		}
@@ -27,6 +27,9 @@ class Solution {
 			int noOfEdges = Integer.parseInt(sc.nextLine());
 			String[] arra1 = sc.nextLine().split(",");
 			int[][] graph = new int[noOfVertices][noOfVertices];
+			// System.out.print(noOfVertices + "vertices");
+			// System.out.print(noOfEdges + "edges");
+			//System.out.println();
 			while (noOfEdges > 0) {
 				String str2 = sc.nextLine();
 				String arra2[] = str2.split(" ");
@@ -36,7 +39,7 @@ class Solution {
 			for (int[] each : graph) {
 				for (int each1: each ) {
 					
-				System.out.print(each + " ");
+				System.out.print(each1 + " ");
 				}
 				System.out.println();
 			}
