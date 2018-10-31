@@ -1,0 +1,18 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Percolation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
