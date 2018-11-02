@@ -1,16 +1,16 @@
 import java.util.Scanner;
 /**
- * class for solution.
+ * Class for solution.
  */
 public final class Solution {
     /**
      * Constructs the object.
      */
-    protected Solution() {
-        //unused.
+    private Solution() {
+        // empty Constructor.
     }
     /**
-     * main function.
+     * main.
      *
      * @param      args  The arguments
      */
@@ -18,18 +18,19 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int v = Integer.parseInt(sc.nextLine());
         int e = Integer.parseInt(sc.nextLine());
-        Graph graph = new Graph(v);
-        for (int i = 0; i < e; i++) {
+        Digraph d = new Digraph(v);
+        while (e > 0) {
             String[] tokens = sc.nextLine().split(" ");
-            graph.addEdge(Integer.parseInt(tokens[0]),
-             Integer.parseInt(tokens[1]));
+            int a = Integer.parseInt(tokens[0]);
+            int b = Integer.parseInt(tokens[1]);
+            d.addEdge(a, b);
+            e--;
         }
-        DirectedCycle dc = new DirectedCycle(graph);
-        if (dc.isBipartite()) {
-            System.out.println("Graph is bipartite");
+        DirectedCycle dc = new DirectedCycle(d);
+        if (dc.hasCycle()) {
+            System.out.println("Cycle exists.");
         } else {
-            System.out.println("Graph is not a bipartite");
-
+            System.out.println("Cycle doesn't exists.");
         }
     }
 }

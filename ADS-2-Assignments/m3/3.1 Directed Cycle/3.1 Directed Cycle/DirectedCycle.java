@@ -19,45 +19,35 @@ public class DirectedCycle {
      */
     private Stack<Integer> cycle;
     /**
-     * { var_description }.
+     * Determines whether the digraph {@code G} has a directed cycle and.
+     * if so, finds such a cycle.
+     * @param gph the digraph
      */
-    private int vertices;
-    /**
-     * { var_description }.
-     */
-    private boolean isbipartite = false;
-    /**
-     * Determines whether the digraph {@code G} has a directed cycle and, if so
-     * finds such a cycle.
-     * @param graph the digraph
-     */
-    public DirectedCycle(final Graph graph) {
-        this.vertices = 0;
-        marked  = new boolean[graph.vertices()];
-        onStack = new boolean[graph.vertices()];
-        edgeTo  = new int[graph.vertices()];
-        for (int v = 0; v < graph.vertices(); v++) {
+    public DirectedCycle(final Digraph gph) {
+        marked  = new boolean[gph.vertices()];
+        onStack = new boolean[gph.vertices()];
+        edgeTo  = new int[gph.vertices()];
+        for (int v = 0; v < gph.vertices(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(graph, v);
+                dfs(gph, v);
             }
         }
     }
     /**
      * { function_description }.
      *
-     * @param      graph     { parameter_description }
+     * @param      gph     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph graph, final int v) {
-        isbipartite = !isbipartite;
+    private void dfs(final Digraph gph, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : graph.adj(v)) {
+        for (int w : gph.adj(v)) {
             if (cycle != null) {
-             return;
+                return;
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(graph, w);
+                dfs(gph, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -65,26 +55,52 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-
+                assert check();
             }
         }
         onStack[v] = false;
     }
+
     /**
-     * Determines if it has cycle.
-     *
-     * @return     True if has cycle, False otherwise.
+     * Does the digraph have a directed cycle?.
+     * @return {@code true} if the digraph has a directed cycle,
+     * {@code false} otherwise
      */
     public boolean hasCycle() {
         return cycle != null;
     }
 
     /**
-     * Determines if bipartite.
-     *
-     * @return     True if bipartite, False otherwise.
+     * Returns a directed cycle if the digraph has a directed cycle.
+     * and {@code null} otherwise.
+     * @return a directed cycle (as an iterable) if the digraph has a
+     * directed cycle,
+     *    and {@code null} otherwise
      */
-    public boolean isBipartite() {
-        return isbipartite;
+    public Iterable<Integer> cycle() {
+        return cycle;
+    }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private boolean check() {
+        if (hasCycle()) {
+            // verify cycle
+            int first = -1, last = -1;
+            for (int v : cycle()) {
+                if (first == -1) {
+                    first = v;
+                }
+                last = v;
+            }
+            if (first != last) {
+                System.out.println("cycle begins with %d and ends with %d\n"
+                                   + first + last);
+                return false;
+            }
+        }
+        return true;
     }
 }
