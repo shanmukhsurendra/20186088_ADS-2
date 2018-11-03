@@ -1,7 +1,56 @@
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.ArrayList;
+
 
 class PageRank {
-	
+	HashMap<Integer, ArrayList<Integer>> incomingVertices;
+	HashMap<Integer, Double> values;
+	Digraph dg;
+	int outDegree;
+	int inDegree;
+	PageRank(Digraph digraph, Integer vertice) {
+		this.outDegree = digraph.outdegree(vertice);
+		this.inDegree = digraph.indegree(vertice);
+		this.dg = digraph;
+		incomingVertices = new HashMap<Integer, ArrayList<Integer>>();
+		for (int i = 0; i < digraph.V(); i++) {
+			for (Integer k : digraph.adj(i)) {
+				if (incomingVertices.containsKey(k)) {
+					ArrayList<Integer> arrayList2 = incomingVertices.get(k);
+					arrayList2.add(i);
+					//System.out.println("list :" + list);
+					incomingVertices.put(k, arrayList2);
+				} else {
+					ArrayList<Integer> arrayList3 = new ArrayList<Integer>();
+					arrayList3.add(i);
+					incomingVertices.put(k, arrayList3);
+				}
+			}
+		}
+	}
+	double getPR(int vertice) {
+		if (dg.outdegree(vertice) == 0) {
+			return 0.0;
+		}
+		values = new HashMap<Integer, Double>();
+		for (int i = 0; i < dg.V(); i++) {
+			values.put(i , 1.0 / dg.V());
+		}
+		double fvalue = 0.0;
+		for (int i = 0; i < 1000; i++) {
+			ArrayList<Integer> vert = incomingVertices.get(vertice);
+			for (int j = 0; j < vert.size(); j++) {
+				int key = vert.get(j);
+				fvalue = values.get(key) / dg.outdegree(key);
+				values.put(key , fvalue);
+			}
+
+		}
+		return fvalue;
+
+	}
+
 }
 
 class WebSearch {
@@ -31,6 +80,14 @@ public class Solution {
 		// This part is only for the final test case
 		
 		// File path to the web content
+		ArrayList<PageRank> arrayList1 = new ArrayList<>();
+		for (int a = 0; a < totalVertices; a++) {
+			PageRank prObject = new PageRank(d, a);
+			arrayList1.add(prObject);
+			//System.out.println(a);
+			prObject.getPR(a);
+			
+		}
 		String file = "WebContent.txt";
 		
 		// instantiate web search object
