@@ -21,7 +21,7 @@ class PageRank {
 		double initialPr = (1/temp);
 		for(int i = 0; i < vertices; i++) {
 			if(graph.indegree(i) == 0) {
-				System.out.println("i am here superman");
+				//System.out.println("i am here superman");
 				map.put(i, 0.0);
 			} else {
 				map.put(i, initialPr);
