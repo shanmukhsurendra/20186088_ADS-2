@@ -45,7 +45,7 @@ class PageRank {
 	}
 	public void print() {
 		for( int i = 0; i<map.size(); i++) {
-			System.out.println(i + "-" + map.get(i));
+			System.out.println(i + " - " + map.get(i));
 		}
 	}
 }
