@@ -7,10 +7,10 @@ class PageRank {
 	HashMap<Integer, Double>map;
 	Digraph graph;
 	Digraph revGraph;
-	int vertices;
+	private int vertices;
 	PageRank(Digraph dg) {
 		graph=dg;
-		vertices = dg.V();
+		vertices = graph.V();
 		map = new HashMap<Integer, Double>();
 		revGraph = graph.reverse();
 	}
@@ -21,6 +21,7 @@ class PageRank {
 		double initialPr = (1/temp);
 		for(int i = 0; i < vertices; i++) {
 			if(graph.indegree(i) == 0) {
+				System.out.println("i am here superman");
 				map.put(i, 0.0);
 			} else {
 				map.put(i, initialPr);
@@ -29,9 +30,10 @@ class PageRank {
 		double[] tempArray = new double[graph.V()];
 		for( int j = 0;j < 1000; j++) {
 			for( int i = 0; i < vertices; i++) {
+				//System.out.println("---------------------------------");
 				sum = 0.0000;
 				for(int each : revGraph.adj(i)) {
-					double value = map.get(i);
+					double value = map.get(each);
 					sum += ((double)value/(double)graph.outdegree(each));
 				}
 				tempArray[i] = sum;
