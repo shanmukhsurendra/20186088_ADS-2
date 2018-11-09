@@ -786,7 +786,7 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:57:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:63:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:63:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:72: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:72: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:75: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:80: Line is longer than 80 characters (found 118). [LineLength]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:81: Line is longer than 80 characters (found 128). [LineLength]
@@ -796,10 +796,10 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:87: Line is longer than 80 characters (found 118). [LineLength]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:88: Line is longer than 80 characters (found 126). [LineLength]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:93: Line is longer than 80 characters (found 124). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:106:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:106:42: Parameter seam should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:111:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:111:40: Parameter seam should be final. [FinalParameters]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:107:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:107:42: Parameter seam should be final. [FinalParameters]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:112:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:112:40: Parameter seam should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 62 errors.
 Starting audit...
