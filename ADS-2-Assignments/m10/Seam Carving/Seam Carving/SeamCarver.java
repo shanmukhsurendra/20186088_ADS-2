@@ -10,12 +10,12 @@ public class SeamCarver {
 		this.picture = picture;
 			// width = picture.width();
 			// height = picture.height();
-			// energy = new double[height][width];
-			// for (int i = 0; i < height; i++) {
-			// 	for (int j = 0; j < width; j++) {
-			// 		energy[i][j] = energy(j, i);
-			// 	}
-			// }
+			energy = new double[height][width];
+			for (int i = 0; i < height; i++) {
+				for (int j = 0; j < width; j++) {
+					energy[i][j] = energy(j, i);
+				}
+			}
 	}
 	// current picture
 	public Picture picture() {
@@ -61,8 +61,14 @@ public class SeamCarver {
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		// int height = picture.height();
-		// int width = picture.width();
+		 height = height();
+		width = width();
+		energy = new double[height][width];
+			for (int i = 0; i < height; i++) {
+				for (int j = 0; j < width; j++) {
+					energy[i][j] = energy(j, i);
+				}
+			}
 		EdgeWeightedDigraph graph = new EdgeWeightedDigraph((width * height) + 2);
 		for (int j = 0; j < width; j++) {
 
