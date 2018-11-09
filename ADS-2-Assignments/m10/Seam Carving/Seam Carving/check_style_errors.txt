@@ -760,7 +760,7 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:35:30: Parameter x should be final. [FinalParameters]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:35:37: Parameter y should be final. [FinalParameters]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:36: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:36:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:36:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:37:32: '1000' is a magic number. [MagicNumber]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:39:44: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:39:45: '+' is not followed by whitespace. [WhitespaceAround]
