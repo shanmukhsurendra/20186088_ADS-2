@@ -61,46 +61,46 @@ public class SeamCarver {
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		//  height = height();
-		// width = width();
-		// energy = new double[height][width];
-		// 	for (int i = 0; i < height; i++) {
-		// 		for (int j = 0; j < width; j++) {
-		// 			energy[i][j] = energy(j, i);
-		// 		}
-		// 	}
-		// EdgeWeightedDigraph graph = new EdgeWeightedDigraph((width * height) + 2);
-		// for (int j = 0; j < width; j++) {
+		height = height();
+		width = width();
+		energy = new double[height][width];
+			for (int i = 0; i < height; i++) {
+				for (int j = 0; j < width; j++) {
+					energy[i][j] = energy(j, i);
+				}
+			}
+		EdgeWeightedDigraph graph = new EdgeWeightedDigraph((width * height) + 2);
+		for (int j = 0; j < width; j++) {
 
-		// 	graph.addEdge(new DirectedEdge(graph.V() - 2, j, energy[0][j]));
-		// }
-		// for (int i = 0; i < height - 1; i++) {
-		// 	for (int j = 0; j < width; j++) {
-		// 		if (i == 0) {
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j), energy[i + 1][j]));
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + (j + 1)), energy[i + 1][j + 1]));
-		// 		} else if (i == width - 1) {
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j), energy[i + 1][j]));
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + (j - 1)), energy[i + 1][j - 1]));
-		// 		} else {
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j - 1), energy[i + 1][j - 1]));
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j), energy[i + 1][j]));
-		// 			graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j + 1), energy[i + 1][j + 1]));
-		// 		}
-		// 	}
-		// }
-		// for (int j = 0; j < width; j++) {
-		// 	graph.addEdge(new DirectedEdge(((height - 1) * (width)) + j, graph.V() - 1, energy[height - 1][j]));
-		// }
-		// AcyclicSP sp = new AcyclicSP(graph, graph.V() - 2);
-		// Iterable<DirectedEdge> path = sp.pathTo(graph.V() - 1);
-		// int[] sparray = new int[height];
-		// int i = 0;
-		// for (DirectedEdge t : path) {
-		// 	sparray[i++] = t.from();
-		// }
-		// return sparray;
-		return new int[0];
+			graph.addEdge(new DirectedEdge(graph.V() - 2, j, energy[0][j]));
+		}
+		for (int i = 0; i < height - 1; i++) {
+			for (int j = 0; j < width; j++) {
+				if (i == 0) {
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j), energy[i + 1][j]));
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + (j + 1)), energy[i + 1][j + 1]));
+				} else if (i == width - 1) {
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j), energy[i + 1][j]));
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + (j - 1)), energy[i + 1][j - 1]));
+				} else {
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j - 1), energy[i + 1][j - 1]));
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j), energy[i + 1][j]));
+					graph.addEdge(new DirectedEdge(i, (((i + 1) * width) + j + 1), energy[i + 1][j + 1]));
+				}
+			}
+		}
+		for (int j = 0; j < width; j++) {
+			graph.addEdge(new DirectedEdge(((height - 1) * (width)) + j, graph.V() - 1, energy[height - 1][j]));
+		}
+		AcyclicSP sp = new AcyclicSP(graph, graph.V() - 2);
+		Iterable<DirectedEdge> path = sp.pathTo(graph.V() - 1);
+		int[] sparray = new int[height];
+		int i = 0;
+		for (DirectedEdge t : path) {
+			sparray[i++] = t.from();
+		}
+		return sparray;
+		// return new int[0];
 	}
 
 	// remove horizontal seam from current picture
