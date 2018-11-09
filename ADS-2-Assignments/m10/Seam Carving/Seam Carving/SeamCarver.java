@@ -8,14 +8,14 @@ public class SeamCarver {
 	private double[][] energy;
 	public SeamCarver(Picture picture) {
 		this.picture = picture;
-		// width = picture.width();
-		// height = picture.height();
-		// energy = new double[height][width];
-		// for (int i = 0; i < height; i++) {
-		// 	for (int j = 0; j < width; j++) {
-		// 		energy[i][j] = energy(j, i);
-		// 	}
-		// }
+			// width = picture.width();
+			// height = picture.height();
+			// energy = new double[height][width];
+			// for (int i = 0; i < height; i++) {
+			// 	for (int j = 0; j < width; j++) {
+			// 		energy[i][j] = energy(j, i);
+			// 	}
+			// }
 	}
 	// current picture
 	public Picture picture() {
