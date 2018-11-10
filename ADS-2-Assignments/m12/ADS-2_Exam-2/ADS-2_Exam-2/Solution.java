@@ -80,7 +80,43 @@ public final class Solution {
                         }
 
                     }
+
+                    if (s == 0) {
+                        q.enqueue(b);
+                    }
+                    if (d == 0) {
+                        q.enqueue(a);
+                    }
                 }
+                DijkstraUndirectedSP djj2 = new DijkstraUndirectedSP(graph, Integer.parseInt(arra3[1]));
+                for (Edge e : djj2.pathTo(y)) {
+                    int a = e.either();
+                    int b = e.other(a);
+                    int s = 0;
+                    int d = 0;
+
+                    for (Integer j : q) {
+                        if (a == j) {
+                            s = 1;
+                        }
+                        if (b == j) {
+                            d = 1;
+                        }
+
+                    }
+                    if (d == 0) {
+                        q.enqueue(a);
+                    }
+                    if (s == 0) {
+                        q.enqueue(b);
+                    }
+                }
+                System.out.println(djj2.distTo(x) + djj2.distTo(y));
+                while (!q.isEmpty()) {
+                    System.out.print(q.dequeue() + " ");
+                }
+            } else {
+                System.out.println("No Path Found.");
             }
             break;
 
