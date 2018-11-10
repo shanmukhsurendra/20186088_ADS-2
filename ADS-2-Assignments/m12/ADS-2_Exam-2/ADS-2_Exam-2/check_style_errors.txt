@@ -1,7 +1,5 @@
 Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:64: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:65:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:67:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.

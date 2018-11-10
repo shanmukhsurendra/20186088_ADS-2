@@ -58,35 +58,38 @@ public final class Solution {
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
-            String[] arra3 = sc.nextLine().split(" ");
+           String[] arra3 = sc.nextLine().split(" ");
             int x = Integer.parseInt(arra3[1]);
             int y = Integer.parseInt(arra3[arra3.length - 1]);
             DijkstraUndirectedSP djj = new DijkstraUndirectedSP(graph, Integer.parseInt(arra3[0]));
-            if(djj.hasPathTo(y)) {
-                Queue<Integer> q = new Queue<Integer>();
-                for(Edge e : djj.pathTo(x)) {
-                    //System.out.println("superman here");
-                    int s = 0, d = 0;
+            if (djj.hasPathTo(y)) {
+                Queue<Integer> que = new Queue<Integer>();
+                for (Edge e : djj.pathTo(x)) {
                     int a = e.either();
                     int b = e.other(a);
+                    int s = 0;
+                    int d = 0;
 
-                    for (Integer c : q) {
-                        //System.out.println("i am superman millenium");
-                        if (a == c) {
+
+                    for (Integer j : que) {
+                        if (a == j) {
                             s = 1;
                         }
-                        if (b == c) {
+                        if (b == j) {
                             d = 1;
                         }
 
                     }
 
                     if (d == 0) {
-                        q.enqueue(b);
+                        que.enqueue(b);
                     }
                     if (s == 0) {
-                        q.enqueue(a);
+                        que.enqueue(a);
                     }
+
+
+
                 }
                 DijkstraUndirectedSP djj2 = new DijkstraUndirectedSP(graph, x);
                 for (Edge e : djj2.pathTo(y)) {
@@ -95,7 +98,7 @@ public final class Solution {
                     int s = 0;
                     int d = 0;
 
-                    for (Integer j : q) {
+                    for (Integer j : que) {
                         if (a == j) {
                             s = 1;
                         }
@@ -105,15 +108,15 @@ public final class Solution {
 
                     }
                     if (s == 0) {
-                        q.enqueue(a);
+                        que.enqueue(a);
                     }
                     if (d == 0) {
-                        q.enqueue(b);
+                        que.enqueue(b);
                     }
                 }
-                System.out.println(djj2.distTo(x) + djj2.distTo(y));
-                while (!q.isEmpty()) {
-                    System.out.print(q.dequeue() + " ");
+                System.out.println(djj.distTo(x) + djj2.distTo(y));
+                while (!que.isEmpty()) {
+                    System.out.print(que.dequeue() + " ");
                 }
             } else {
                 System.out.println("No Path Found.");
