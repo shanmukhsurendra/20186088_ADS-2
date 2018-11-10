@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -27,13 +27,12 @@ public class Solution {
             String[] arra1 = sc.nextLine().split(" ");
             graph.addEdge(new Edge(Integer.parseInt(arra1[0]),
              Integer.parseInt(arra1[1]), Integer.parseInt(arra1[2])));
-            i++;        
+            i++;
         }
         String caseToGo = sc.nextLine();
         switch (caseToGo) {
         case "Graph":
         System.out.println(graph.toString());
-            
             break;
 
         case "DirectedPaths":
@@ -43,7 +42,8 @@ public class Solution {
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             String[] arra2 = sc.nextLine().split(" ");
-            DijkstraUndirectedSP dj = new DijkstraUndirectedSP(graph, Integer.parseInt(arra2[0]));
+            DijkstraUndirectedSP dj = new DijkstraUndirectedSP(graph,
+             Integer.parseInt(arra2[0]));
             if (dj.hasPathTo(Integer.parseInt(arra2[1]))) {
                 System.out.println(dj.distTo(Integer.parseInt(arra2[1])));
             } else {
