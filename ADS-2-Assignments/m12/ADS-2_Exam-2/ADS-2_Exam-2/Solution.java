@@ -58,6 +58,30 @@ public final class Solution {
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
+            String[] arra3 = sc.nextLine().split(" ");
+            DijkstraUndirectedSP djj = new DijkstraUndirectedSP(graph, Integer.parseInt(arra3[0]));
+            int x = Integer.parseInt(arra3[1]);
+            int y = Integer.parseInt(arra3[arra3.length - 1]);
+            if(djj.hasPathTo(y)) {
+                Queue<Integer> q = new Queue<Integer>();
+                for(Edge e : djj.pathTo(x)) {
+                    //System.out.println("superman here");
+                    int s = 0, d = 0;
+                    int a = e.either();
+                    int b = e.other(a);
+
+                    for (Integer c : q) {
+                        //System.out.println("i am superman millenium");
+                        if (a == c) {
+                            s = 1;
+                        }
+                        if (b == c) {
+                            d = 1;
+                        }
+
+                    }
+                }
+            }
             break;
 
         default:
