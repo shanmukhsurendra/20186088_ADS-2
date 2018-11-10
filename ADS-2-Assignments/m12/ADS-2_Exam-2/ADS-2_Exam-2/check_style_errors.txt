@@ -9,7 +9,9 @@ Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:25: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:31: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:35: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:50: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 14 errors.
