@@ -18,7 +18,7 @@ public class Solution {
 		int nRoutes = Integer.parseInt(sc.nextLine());
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(nCities);
 		int i = 0;
-		while (i < nCities){
+		while (i < nRoutes){
 			String[] arra1 = sc.nextLine().split(" ");
 			graph.addEdge(new Edge(Integer.parseInt(arra1[0]),
 			 Integer.parseInt(arra1[1]), Integer.parseInt(arra1[2])));
