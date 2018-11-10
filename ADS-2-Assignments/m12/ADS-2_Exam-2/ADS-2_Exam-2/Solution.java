@@ -1,14 +1,34 @@
+import java.util.Scanner;
+import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 public class Solution {
-
+/**
+ * main function reads input.
+ *
+ * @param      args  The arguments
+ */
 	public static void main(String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
-
-		String caseToGo = null;
+		Scanner sc = new Scanner(System.in);
+		int nCities = Integer.parseInt(sc.nextLine());
+		int nRoutes = Integer.parseInt(sc.nextLine());
+		EdgeWeightedGraph graph = new EdgeWeightedGraph(nCities);
+		int i = 0;
+		while (i < nCities){
+			String[] arra1 = sc.nextLine().split(" ");
+			graph.addEdge(new Edge(Integer.parseInt(arra1[0]),
+			 Integer.parseInt(arra1[1]), Integer.parseInt(arra1[2])));
+			i++;		
+		}
+		String caseToGo = sc.nextLine();
 		switch (caseToGo) {
 		case "Graph":
-			//Print the Graph Object.
+		System.out.println(graph.toString());
+			
 			break;
 
 		case "DirectedPaths":

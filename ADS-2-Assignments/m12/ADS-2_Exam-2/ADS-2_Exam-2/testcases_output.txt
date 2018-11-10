@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 6 vertices 6 edges
 0: 0-3 1.00000  0-1 2.00000  
@@ -9,8 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+6 vertices 6 edges
+0: 0-3 1.00000  0-1 2.00000  
+1: 1-2 4.00000  1-4 5.00000  0-1 2.00000  
+2: 2-4 1.00000  3-2 3.00000  1-2 4.00000  
+3: 3-2 3.00000  0-3 1.00000  
+4: 2-4 1.00000  1-4 5.00000  
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -28,8 +33,7 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -37,8 +41,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -46,8 +49,7 @@ Expected Output:
 370.0
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,8 +57,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -65,7 +66,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
