@@ -88,7 +88,7 @@ public final class Solution {
                         q.enqueue(a);
                     }
                 }
-                DijkstraUndirectedSP djj2 = new DijkstraUndirectedSP(graph, Integer.parseInt(arra3[1]));
+                DijkstraUndirectedSP djj2 = new DijkstraUndirectedSP(graph, x);
                 for (Edge e : djj2.pathTo(y)) {
                     int a = e.either();
                     int b = e.other(a);
