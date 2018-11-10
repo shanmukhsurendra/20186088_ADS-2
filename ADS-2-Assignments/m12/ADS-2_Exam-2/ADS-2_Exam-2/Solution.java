@@ -104,10 +104,10 @@ public final class Solution {
                         }
 
                     }
-                    if (d == 0) {
+                    if (s == 0) {
                         q.enqueue(a);
                     }
-                    if (s == 0) {
+                    if (d == 0) {
                         q.enqueue(b);
                     }
                 }
