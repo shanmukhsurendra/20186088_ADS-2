@@ -81,10 +81,10 @@ public final class Solution {
 
                     }
 
-                    if (s == 0) {
+                    if (d == 0) {
                         q.enqueue(b);
                     }
-                    if (d == 0) {
+                    if (s == 0) {
                         q.enqueue(a);
                     }
                 }
