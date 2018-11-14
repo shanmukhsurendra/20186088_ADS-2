@@ -3,7 +3,7 @@ import java.util.HashMap;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
