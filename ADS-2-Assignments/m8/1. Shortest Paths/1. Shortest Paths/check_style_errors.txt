@@ -1,11 +1,4 @@
 Starting audit...
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:18:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:24:21: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:25:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:29:14: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:32: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:37:25: Array brackets at illegal position. [ArrayTypeStyle]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:6: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
