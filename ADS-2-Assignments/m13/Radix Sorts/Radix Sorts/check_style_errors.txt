@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
