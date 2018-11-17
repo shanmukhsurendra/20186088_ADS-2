@@ -1,25 +1,8 @@
 Starting audit...
 [ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:8: Class Solution should be declared as final. [FinalClass]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:12:22: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:20:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:103:39: Parameter file should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:123:33: ')' is preceded with whitespace. [ParenPad]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:124:28: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:124:42: ')' is preceded with whitespace. [ParenPad]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:138:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:144:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:144:15: Parameter st should be final. [FinalParameters]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:147:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:189: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:207:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:208:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:223: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:229:32: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:235:39: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:251: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\20186088_ADS-2\20186088_ADS-2\ADS-2-Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:146:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 2 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

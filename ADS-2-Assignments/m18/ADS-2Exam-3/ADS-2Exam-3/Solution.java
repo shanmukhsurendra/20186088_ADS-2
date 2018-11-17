@@ -5,11 +5,11 @@ import java.util.HashMap;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution () {
+    private Solution() {
 
     }
 /**
@@ -17,7 +17,7 @@ public class Solution {
  *
  * @param      args  The arguments
  */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
 
@@ -100,7 +100,7 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String[] toReadFile(String file) {
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
@@ -120,8 +120,8 @@ public class Solution {
         int len = arra1.length;
         for (int i = 0; i < len; i++) {
             String word = arra1[i].toLowerCase();
-            if (st.contains(word )) {
-                st.put(word , st.get(word ) + 1);
+            if (st.contains(word)) {
+                st.put(word, st.get(word) + 1);
             } else {
                 st.put(word, 1);
             }
@@ -134,17 +134,19 @@ public class Solution {
  * Class for t 9.
  */
 class T9 {
-
+        /**
+         * object for tst.
+         */
         private TST tst;
     /**
      * Constructs the object.
      *
      * @param      st    { parameter_description }
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST();
-        for(String word: st.keys()) {
+        for (String word: st.keys()) {
             tst.put(word, st.get(word));
         }
 
@@ -186,8 +188,9 @@ class T9 {
         for (int i = 0; i < digits.length(); i++) {
             for (String str : list1) {
                 String letters = map2.get(digits.charAt(i));
-                for (int j = 0; j < letters.length(); j++)
+                for (int j = 0; j < letters.length(); j++) {
                     list2.add(str + letters.charAt(j));
+                }
             }
             list1 = list2;
             list2 = new ArrayList<String>();
@@ -204,8 +207,8 @@ class T9 {
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         Queue<String> possibilities = new Queue<>();
-        for(String each: combinations(t9Signature)) {
-            if(tst.contains(each)) {
+        for (String each: combinations(t9Signature)) {
+            if (tst.contains(each)) {
                 possibilities.enqueue(each);
             }
         }
@@ -220,19 +223,20 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String>
+     words, final int k) {
         // your code goes here
         MaxPQ<Integer> mp = new MaxPQ<Integer>();
         TreeSet<String> ts = new TreeSet<String>();
         for (String each : words) {
             // System.out.println("each");
-            mp.insert((Integer)tst.get(each));
+            mp.insert((Integer) tst.get(each));
         }
         for (int i = 0; i < k; i++) {
             int value = mp.delMax();
             //System.out.println("batman here");
             for (String word : words) {
-                if (value == (Integer)tst.get(word)) {
+                if (value == (Integer) tst.get(word)) {
                     ts.add(word);
                 }
             }
@@ -248,7 +252,6 @@ class T9 {
      *
      * @return     { description_of_the_return_value }
      */
-    
     public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
