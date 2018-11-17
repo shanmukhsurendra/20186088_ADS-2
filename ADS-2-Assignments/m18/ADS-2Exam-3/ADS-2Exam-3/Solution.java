@@ -1,10 +1,22 @@
 import java.util.Scanner;
 import java.util.TreeSet;
-
-
+import java.util.ArrayList;
+import java.util.HashMap;
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution () {
 
-	// Don't modify this method.
+	}
+/**
+ * { function_description }.
+ *
+ * @param      args  The arguments
+ */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
@@ -12,7 +24,8 @@ public class Solution {
 		switch (cases) {
 		case "loadDictionary":
 			// input000.txt and output000.txt
-			BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+			BinarySearchST<String, Integer> hash =
+			 loadDictionary("/Files/t9.csv");
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				System.out.println(hash.get(key));
@@ -80,14 +93,28 @@ public class Solution {
 		}
 	}
 
-	// Don't modify this method.
+	/**
+	 * { function_description }.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] toReadFile(String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
-	public static BinarySearchST<String, Integer> loadDictionary(String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static
+	 BinarySearchST<String, Integer> loadDictionary(String file) {
+		BinarySearchST<String, Integer>  st = new BinarySearchST<String,
+		 Integer>();
 		// your code goes here
 		String[] arra1 = toReadFile(file);
 		int len = arra1.length;
@@ -103,11 +130,17 @@ public class Solution {
 	}
 }
 
-
+/**
+ * Class for t 9.
+ */
 class T9 {
 
-		TST tst;
-	// public T9(BinarySearchST<String, Integer> st) {
+		private TST tst;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      st    { parameter_description }
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tst = new TST();
@@ -117,27 +150,87 @@ class T9 {
 
 	}
 
-	// get all the prefixes that match with given prefix.
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return tst.keysWithPrefix(prefix);
 	}
+	/**
+	 * helper function.
+	 *
+	 * @param      digits  The digits
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static ArrayList<String> combinations(final
+                             String digits) {
+		HashMap<Character, String> map2 = new HashMap<Character, String>();
+        ArrayList<String> list1 = new ArrayList<String>();
+        ArrayList<String> list2 = new ArrayList<String>();
+		map2.put('2', "abc");
+		map2.put('3', "def");
+		map2.put('4', "ghi");
+		map2.put('5', "jkl");
+		map2.put('6', "mno");
+		map2.put('7', "pqrs");
+		map2.put('8', "tuv");
+		map2.put('9', "wxyz");
+        list1.add("");
 
+        for (int i = 0; i < digits.length(); i++) {
+            for (String str : list1) {
+                String letters = map2.get(digits.charAt(i));
+                for (int j = 0; j < letters.length(); j++)
+                    list2.add(str + letters.charAt(j));
+            }
+            list1 = list2;
+            list2 = new ArrayList<String>();
+        }
+        return list1;
+    }
+    /**
+     * gfets the words from numbers.
+     *
+     * @param      t9Signature  The t 9 signature
+     *
+     * @return     { description_of_the_return_value }
+     */
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		Queue<String> possibilities = new Queue<>();
+		for(String each: combinations(t9Signature)) {
+			if(tst.contains(each)) {
+				possibilities.enqueue(each);
+			}
+		}
+		return possibilities;
 	}
 
-	// return all possibilities(words), find top k with highest frequency.
+	/**
+	 * Gets the suggestions.
+	 *
+	 * @param      words  The words
+	 * @param      k      { parameter_description }
+	 *
+	 * @return     The suggestions.
+	 */
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		MaxPQ<Integer> mp = new MaxPQ<Integer>();
 		TreeSet<String> ts = new TreeSet<String>();
 		for (String each : words) {
+			// System.out.println("each");
 			mp.insert((Integer)tst.get(each));
 		}
 		for (int i = 0; i < k; i++) {
 			int value = mp.delMax();
+			System.out.println("batman here");
 			for (String word : words) {
 				if (value == (Integer)tst.get(word)) {
 					ts.add(word);
@@ -147,8 +240,15 @@ class T9 {
 		return ts;
 	}
 
-	// final output
-	// Don't modify this method.
+	/**
+	 * { function_description }.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	
 	public Iterable<String> t9(String t9Signature, int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
