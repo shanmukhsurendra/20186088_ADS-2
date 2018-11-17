@@ -146,7 +146,7 @@ class T9 {
      T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST();
-        for (String word: st.keys()) {
+        for (String word : st.keys()) {
             tst.put(word, st.get(word));
         }
 
