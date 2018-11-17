@@ -143,7 +143,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+     T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST();
         for (String word: st.keys()) {
@@ -256,3 +256,7 @@ class T9 {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
+
+
+
+
