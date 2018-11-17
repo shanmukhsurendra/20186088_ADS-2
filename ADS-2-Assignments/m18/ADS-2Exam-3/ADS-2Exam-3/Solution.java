@@ -230,7 +230,7 @@ class T9 {
 		}
 		for (int i = 0; i < k; i++) {
 			int value = mp.delMax();
-			System.out.println("batman here");
+			//System.out.println("batman here");
 			for (String word : words) {
 				if (value == (Integer)tst.get(word)) {
 					ts.add(word);
